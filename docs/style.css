@@ -43,12 +43,4 @@ a:active {
 }
 
 /* Dark mode overrides */
-@media(prefers-color-scheme: dark) {
-  body {
-    background: #000;
-    color: #fff;
-  }
-  a {
-    color: #dedcf5;           /* light blue in dark mode */
-  }
-}
+/* none */
