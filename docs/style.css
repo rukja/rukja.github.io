@@ -16,15 +16,17 @@ pre {
 }
 
 .big {
-  font-size: 16px;   /*  bigger */
+  font-size: 32px;   /*  bigger */
   font-weight: bold; /* optional */
+  color: #96CC87; /* green */
+  text-decoration: underline;
 }
 
 
 
 /* Base link colors (light mode) */
 a {
-  color: #8d9e91;          /* default grey=green */
+  color: #8d9e91;          /* default grey-green */
   text-decoration: none;   /* no underline */
 }
 
