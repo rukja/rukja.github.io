@@ -1,0 +1,28 @@
+/* Base link colors (light mode) */
+a {
+  color: #f0c9ca;          /* default pink */
+  text-decoration: none;   /* no underline */
+}
+
+a:visited {
+  color: #8d9e91;          /* visited grey-green */
+}
+
+a:hover {
+  color: #cc0000;          /* red hover */
+}
+
+a:active {
+  color: #ff6600;          /* orange when clicking */
+}
+
+/* Dark mode overrides */
+@media(prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+  a {
+    color: #dedcf5;           /* light blue in dark mode */
+  }
+}
