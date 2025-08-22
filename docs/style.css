@@ -15,6 +15,10 @@ pre {
   overflow-x: hidden;
 }
 
+body {
+  margin: 6; /* enhance browser default spacing */
+}
+
 
 /* Base link colors (light mode) */
 a {
