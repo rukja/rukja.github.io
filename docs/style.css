@@ -15,16 +15,21 @@ pre {
   overflow-x: hidden;
 }
 
+.big {
+  font-size: 16px;   /*  bigger */
+  font-weight: bold; /* optional */
+}
+
 
 
 /* Base link colors (light mode) */
 a {
-  color: #f0c9ca;          /* default pink */
+  color: #8d9e91;          /* default grey=green */
   text-decoration: none;   /* no underline */
 }
 
 a:visited {
-  color: #8d9e91;          /* visited grey-green */
+  color: #FFC0CB;          /* visited pink */
 }
 
 a:hover {
