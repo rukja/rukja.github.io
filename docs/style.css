@@ -1,3 +1,21 @@
+/* Base body */
+body {
+  overflow-y: scroll;
+  font: 16px monospace, monospace;
+}
+
+/* Layout */
+img, .c {
+  display: table-cell;
+  max-width: 80ch;  /* 80 characters wide */
+}
+
+pre {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
 /* Base link colors (light mode) */
 a {
   color: #f0c9ca;          /* default pink */
