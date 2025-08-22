@@ -1,3 +1,10 @@
+/* Force light mode */
+html, body {
+  background-color: #fff !important;  /* white background */
+  color: #000 !important;             /* black text */
+}
+
+
 /* Base body */
 body {
   overflow-y: scroll;
