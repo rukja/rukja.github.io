@@ -46,13 +46,20 @@ pre {
     font-size: 14px;
   }
   
+  .c {
+    display: block !important;
+    font-size: 1.94vw; /* This makes ASCII art scale with viewport width */
+  }
+  
   .big {
     font-size: 24px;
   }
   
   pre {
-    font-size: 12px;
+    font-size: 1.94vw; /* Scale pre content with viewport */
     padding: 8px;
+    white-space: pre; /* Keep original formatting */
+    overflow-x: auto; /* Allow horizontal scroll if needed */
   }
   
   .main-container {
