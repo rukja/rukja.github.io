@@ -1,59 +1,92 @@
 /* Base body */
 body {
   overflow-y: scroll;
-  font: 16px monospace, monospace;
+  font-family: monospace, monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 1rem;
+  margin: 0;
+  background: #fff;
+  color: #000;
 }
 
-/* Layout */
+/* Layout container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+/* Image and content blocks */
 img, .c {
-  display: table-cell;
-  max-width: 80ch;  /* 80 characters wide */
+  flex: 1 1 45%;       /* side by side if room */
+  max-width: 100%;     /* shrink for smaller screens */
+  height: auto;
 }
 
 pre {
-  margin: 2;
-  overflow-x: hidden;
+  margin: 0.5rem 0;
+  overflow-x: auto;    /* horizontal scroll for code */
+  padding: 0.5rem;
+  background: #f4f4f4;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
+/* Big text */
 .big {
-  font-size: 32px;   /*  bigger */
-  font-weight: bold; /* optional */
-  color: #96CC87; /* green */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #96CC87;
+  word-wrap: break-word;
 }
 
-
-
-/* Base link colors (light mode) */
+/* Links */
 a {
-  color: #003300;          /* default kashmir-green */
-  text-decoration: none;   /* no underline */
+  color: #003300;
+  text-decoration: none;
+  word-break: break-word;
 }
 
-a:visited {
-  color: #FFC0CB;          /* visited pink */
+a:visited { color: #FFC0CB; }
+a:hover   { color: #cc0000; }
+a:active  { color: #ff6600; }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body { background: #000; color: #fff; }
+  pre { background: #222; color: #fff; }
+  a { color: #6CF; }
+  a:visited { color: #FFC0CB; }
+  a:hover   { color: #cc0000; }
+  a:active  { color: #ff6600; }
 }
 
-a:hover {
-  color: #cc0000;          /* red hover */
-}
-
-a:active {
-  color: #ff6600;          /* orange when clicking */
-}
-
-/* Dark mode overrides */
-@media(prefers-color-scheme:dark) {
-  body { background:#000; color:#fff } /* dark mode */
-  a { color:#6CF }  /* cyan links */
-  a:visited {
-    color: #FFC0CB;          /* visited pink */
+/* 📱 Mobile responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 0.75rem;
   }
 
-  a:hover {
-    color: #cc0000;          /* red hover */
+  .big {
+    font-size: 1.5rem;
   }
 
-  a:active {
-    color: #ff6600;          /* orange when clicking */
+  /* Stack image + content vertically */
+  .container {
+    flex-direction: column;
+  }
+
+  img, .c {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  pre {
+    font-size: 0.85rem;
+    padding: 0.4rem;
   }
 }
