@@ -16,7 +16,7 @@ img, .c {
 
 pre {
   margin: 0;
-  overflow-x: auto;
+  overflow-x: hidden;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
