@@ -2,17 +2,23 @@
 body {
   overflow-y: scroll;
   font: 16px monospace, monospace;
+  margin: 0;
+  padding: 0;
 }
 
 /* Layout */
 img, .c {
-  display: table-cell;
-  max-width: 80ch;  /* 80 characters wide */
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 pre {
-  margin: 2;
-  overflow-x: hidden;
+  margin: 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .big {
@@ -21,6 +27,43 @@ pre {
   color: #96CC87; /* green */
 }
 
+/* Mobile-first responsive design */
+@media (min-width: 768px) {
+  img, .c {
+    display: table-cell;
+    max-width: 80ch;  /* 80 characters wide on desktop */
+    width: auto;
+  }
+  
+  pre {
+    white-space: pre;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .big {
+    font-size: 24px;
+  }
+  
+  pre {
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .main-container {
+    display: block !important;
+    margin: 8px !important;
+  }
+  
+  .c {
+    margin-bottom: 16px;
+  }
+}
 
 
 /* Base link colors (light mode) */
