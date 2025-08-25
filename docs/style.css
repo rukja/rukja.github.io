@@ -27,6 +27,13 @@ pre {
   color: #96CC87; /* green */
 }
 
+
+.t {
+  color: #003300;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* Mobile-first responsive design */
 @media (min-width: 768px) {
   img, .c {
@@ -106,4 +113,10 @@ a:active {
   a:active {
     color: #ff6600;          /* orange when clicking */
   }
+
+  .t {
+    color: #003300;
+    font-weight: bold;
+    text-decoration: none;
+  } 
 }
