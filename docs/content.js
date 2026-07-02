@@ -49,7 +49,7 @@ window.SITE_CONTENT = {
 \\||//  \\||//  \\||//
 //  \\  //  \\  //  \\`,
       intro: [
-        "I am currently an undergraduate student at the University of California, Los Angeles (UCLA), pursuing a Bachelor of Science in Computational and Systems Biology with a minor in Geography."
+        "I am an incoming PhD student in the Bioinformatics and Integrative Genomics (BIG) PhD program at Harvard Medical School."
       ],
       sections: [
         {
@@ -75,23 +75,25 @@ window.SITE_CONTENT = {
             { title: "Projects", description: "I like doing a lot of projects in a lot of different areas." },
             { title: "Non-negotiables", description: "Having non-negotiables is a non-negotiable." },
             { title: "Languages", description: "English, Tamil, Hindi, German, Spanish." },
-            { title: "Longest run", description: "20.1 miles, updated 2 Sep. 2025." }
+            { title: "Longest run", description: "26.2 miles, updated 30th October, 2025." }
           ]
         },
         {
           heading: "College",
           paragraphs: [
-            "I came into UCLA intending to double major in CASB and political science. I chose to stick with CASB and take as many political science classes as possible, especially upper-division ones that piqued my interest.",
+            "I came into UCLA intending to double major in Computational and Systems Biology (CASB) and political science. I chose to stick with CASB and take as many political science classes as possible, especially upper-division ones that piqued my interest.",
             `At UCLA, I am involved in the <a href="https://bruinreview.wordpress.com/" target="_blank">Bruin Review</a>, the <a href="https://datascienceunion.com/" target="_blank">Data Science Union</a>, and <a href="https://matriculate.org/" target="_blank">Matriculate</a>.`,
             `I am also a dry-lab bioinformatics undergraduate researcher in the <a href="https://www.mfwellslab.com/" target="_blank">Wells Lab</a>.`
+            `I ended up graduating with a BS in CASB.`
           ]
         },
         {
           heading: "Interests and next steps",
           paragraphs: [
             "I am broadly interested in the intersection between data science and statistics, biology, machine learning, and recently, artificial intelligence.",
-            "I am specifically interested in the analysis of large-scale multi-omic datasets to better understand the relationship between immunology, microbiology, disease trajectory, and host response. I have recently become interested in the use of genomic language models to interrogate the genetic architecture of pathogens.",
+            "I am specifically interested in the analysis of large-scale multi-omic datasets to better understand the relationship between immunology and exposomics. I have recently become interested in the use of genomic language models to interrogate the genetic architecture of pathogens.",
             `Other academic interests include public health and health policy, epidemiology, computational political and social science, and <a href="https://dailybruin.com/2024/11/04/student-part-time-electoral-statistician-goes-to-dc-to-model-election-predictions" target="_blank">electoral statistics</a>.`
+            `I hope to take a more methods-oriented approach to my PhD at HMS.`
           ]
         },
         {
@@ -100,7 +102,7 @@ window.SITE_CONTENT = {
             `For a full CV, see <a href="/files/Rithwik_narendra_CV.pdf">here</a>. For papers, see <a href="/Publications">here</a>.`
           ],
           items: [
-            { meta: "June '25 - Present", title: "Research Intern @ Farhat Lab", description: "Department of Biomedical Informatics, Harvard Medical School." },
+            { meta: "June '25 - January '26", title: "Research Intern @ Farhat Lab", description: "Department of Biomedical Informatics, Harvard Medical School." },
             { meta: "October '23 - Present", title: "Research Intern @ Wells Lab", description: "David Geffen School of Medicine, UCLA." },
             { meta: "July '23 - Present", title: "Research Intern @ Chaz Langelier Lab", description: "Division of Infectious Diseases, UCSF + CZ Biohub." },
             { meta: "June '20 - November '21", title: "Research Intern @ Wilson Lab", description: "Department of Neurology, UCSF." },
@@ -121,7 +123,7 @@ window.SITE_CONTENT = {
           heading: "Projects",
           items: [
             {
-              meta: "Farhat Lab @ Harvard Department of Biomedical Informatics · June '25 - ongoing",
+              meta: "Farhat Lab @ Harvard Department of Biomedical Informatics · June '25 - January '26",
               title: "Computationally assessing Mycobacterium abscessus phage susceptibility",
               description: "Annotating, characterizing, and extracting features from phage and M. abscessus strain genomes; using protein language models and state-space genomic language models to predict infection and discover biology."
             },
@@ -182,7 +184,7 @@ window.SITE_CONTENT = {
       ]
     },
     projects: {
-      title: "Other data projects I find cool",
+      title: "Other data projects I did",
       intro: ["Organized by personal fulfillment."],
       sections: [
         {
@@ -262,14 +264,15 @@ window.SITE_CONTENT = {
         {
           heading: "Things I check religiously",
           items: [
-            { title: "Email", description: "rithwiknarendra@ucla.edu" },
+            { title: "Email", description: "orukja@gmail.com" },
             { title: "Chess.com", description: `message <a href="https://www.chess.com/member/rukja">me</a>` }
           ]
         },
         {
           heading: "Things I check",
           items: [
-            { title: "Email", description: "orukja@gmail.com" },
+            { title: "Email", description: "rithwiknarendra@ucla.edu" },
+            { title: "Email", description: "rithwik_narendra@g.harvard.edu.edu" },
             { title: "Strava", description: `message <a href="https://www.strava.com/athletes/52339643" target="_blank">me</a>` },
             { title: "LinkedIn", description: `message <a href="https://www.linkedin.com/in/rithwik-narendra/" target="_blank">me</a>` }
           ]
@@ -283,7 +286,9 @@ window.SITE_CONTENT = {
           heading: "Quotes",
           items: [
             { title: `"i fear we need an apology for the apology"`, description: "u/awordalonee. Context: Taylor Townsend's apology video for mocking Chinese food." },
-            { title: `"I am sorry to play the role of Reviewer #2."`, description: `Anonymous. Context: Reviewer #1 in the peer-review report for "Harms of introduced large herbivores outweigh benefits to native biodiversity".` }
+            { title: `"I am sorry to play the role of Reviewer #2."`, description: `Anonymous. Context: Reviewer #1 in the peer-review report for "Harms of introduced large herbivores outweigh benefits to native biodiversity".` },
+            { title: `"Profound but technically meaningless."`, description: "Jeff. Context: Community S1 E6, I forgot what specifically." },
+            { title: `"Invisitibility is a superpower."`, description: "Banksy (2010)."}
           ]
         }
       ]
