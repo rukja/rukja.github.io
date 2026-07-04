@@ -1,27 +1,32 @@
 (function () {
-  const content = window.SITE_CONTENT;
-  const pageKey = document.body.dataset.page || "home";
-  const page = content.pages[pageKey] || content.pages.notFound;
+  const site = window.SITE_CONFIG;
+  const page = window.PAGE_CONTENT;
+  const pageKey = page?.key || document.body.dataset.page || "home";
 
-  document.title = content.siteTitle;
-  document.querySelector('meta[name="Description"]')?.setAttribute("content", content.description);
+  if (!site || !page) {
+    document.getElementById("app").textContent = "This page could not load its content.";
+    return;
+  }
+
+  document.title = site.siteTitle;
+  document.querySelector('meta[name="Description"]')?.setAttribute("content", site.description);
 
   const app = document.getElementById("app");
   app.className = "site-shell";
   app.innerHTML = `
     <aside class="sidebar">
       <div class="brand">
-        <h1 class="brand__name">${content.name}</h1>
-        <p class="brand__prompt">${content.displayName}@home ~ $</p>
+        <h1 class="brand__name">${site.name}</h1>
+        <p class="brand__prompt">${site.displayName}@home ~ $</p>
       </div>
       <nav class="nav" aria-label="Main navigation">
-        ${content.nav.map(renderNavLink).join("")}
+        ${site.nav.map(renderNavLink).join("")}
       </nav>
     </aside>
     <main class="main">
-      <p class="terminal-line">${content.displayName}@home ~ $ open ${escapeHtml(pageKey)}</p>
+      <p class="terminal-line">${site.displayName}@home ~ $ open ${escapeHtml(pageKey)}</p>
       ${renderPage(page)}
-      <footer class="footer">Rithwik Narendra (C) 2025-</footer>
+      <footer class="footer">${site.name} (C) 2025-</footer>
     </main>
   `;
 
