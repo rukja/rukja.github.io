@@ -26,7 +26,7 @@
     <main class="main">
       <p class="terminal-line">${site.displayName}@home ~ $ open ${escapeHtml(pageKey)}</p>
       ${renderPage(page)}
-      <footer class="footer">${site.name} (C) 2025-</footer>
+      <footer class="footer">${site.name} (C) 2026-</footer>
     </main>
   `;
 
