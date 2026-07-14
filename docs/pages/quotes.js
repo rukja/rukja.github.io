@@ -26,7 +26,7 @@ window.PAGE_CONTENT = {
           "description": "Vyom Pawar (2026). Context: VAR disallowing Croatia's equalizing goal in WC R32"
         },
         {
-          "title": "\"Whereas Costco membership helps to reduce overhead, Amazon membership increases it.\"",
+          "title": "\"Whereas Costco membership helps to reduce overhead, Amazon membership increases it ... Is it more logistically impressive to solve difficult problems or to eliminate the need to solve them in the first place?\"",
           "description": "Benjamin Y. Fong (2026) for <i>Phenomenal World</i>, \"The Anti-Amazon\"." 
         }
       ]
