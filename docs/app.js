@@ -53,7 +53,7 @@
 
   function renderSubnav(sections) {
     if (!sections || sections.length < 2) return "";
-    return `<ul class="subnav">${sections.map((section) => `<li><a href="#${slug(section.heading)}">${section.heading}</a></li>`).join("")}</ul>`;
+    return `<ul class="subnav">${sections.map((section) => `<li><a href="#${slug(section.heading)}">${section.heading}</a></li>`).join("|")}</ul>`;
   }
 
   function renderSection(section) {
