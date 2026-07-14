@@ -24,6 +24,10 @@ window.PAGE_CONTENT = {
         {
           "title": "\"they put a microchip in the ball? Why’d they give it a Covid vaccine ?\"",
           "description": "Vyom Pawar (2026). Context: VAR disallowing Croatia's equalizing goal in WC R32"
+        },
+        {
+          "title": "\"Whereas Costco membership helps to reduce overhead, Amazon membership increases it.\"",
+          "description": "Benjamin Y. Fong (2026) for <i>Phenomenal World</i>, \"The Anti-Amazon\"." 
         }
       ]
     }
