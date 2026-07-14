@@ -8,10 +8,6 @@ window.PAGE_CONTENT = {
         {
           "title": "Email",
           "description": "orukja@gmail.com"
-        },
-        {
-          "title": "Chess.com",
-          "description": "message <a href=\"https://www.chess.com/member/rukja\">me</a>"
         }
       ]
     },
